@@ -10,15 +10,15 @@ export default function Navbar() {
     <nav className="bg-transparent dark:bg-white  w-full z-20 top-0 left-0 border-transparent border-transparent dark:border-gray-600">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="" className="flex items-center">
-          <Image
-            src={Logo}
+          <img
+            src="https://yellow-instant-gazelle-449.mypinata.cloud/ipfs/QmXUBWu5412Agr4Jc2ZjJAnfj5oDdFdAyTaoUfurNUPuLM?_gl=1*1aarsgj*_ga*MTM5OTUzMjUxOS4xNjcwNzYwMTMw*_ga_5RMPXG14TE*MTY5MTg1NDY1OS4xNi4wLjE2OTE4NTQ2ODEuMzguMC4w"
             className="pt-0"
-            alt="Grate Logo"
+            alt="Angle Logo"
             width={30}
             height={30}
           />
           <span className="nav_logo_name pl-4 self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Great Dane AI
+          Angle Warriors
           </span>
         </Link>
         <div className="flex md:order-2">

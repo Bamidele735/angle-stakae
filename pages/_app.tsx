@@ -15,25 +15,25 @@ import {
 } from "@rainbow-me/rainbowkit";
 import { configureChains, createClient, WagmiConfig } from "wagmi";
 import { publicProvider } from "wagmi/providers/public";
-import { polygon } from "wagmi/chains";
+import { polygonMumbai } from "wagmi/chains";
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 import Navbar from "../components/Navbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "../components/Footer";
 // This is the chain your dApp will work on.
-const activeChain = ChainId.Polygon;
+const activeChain = ChainId.Mumbai;
 
 // Configure the blockchain providers and chains to use
 const { chains, provider } = configureChains(
-  [polygon], // Use the Polygon  test network
+  [polygonMumbai], // Use the polygonMumbai  test network
   // [publicProvider()] // Use a public provider to connect to the network
   [
     // Use a JSON-RPC provider to connect to the network
     jsonRpcProvider({
-      // Check if the chain ID matches the Polygon  test network
+      // Check if the chain ID matches the polygonMumbai  test network
       rpc: (chain) => {
-        if (chain.id !== polygon.id) return null;
+        if (chain.id !== polygonMumbai.id) return null;
         return { http: `${chain.rpcUrls.default}` };
       },
     }),
@@ -42,7 +42,7 @@ const { chains, provider } = configureChains(
 
 // Get the default wallets for the specified chains
 const { connectors } = getDefaultWallets({
-  appName: "GrateDane", // Specify the name of the app
+  appName: "Angle Warriors", // Specify the name of the app
   chains, // Use the configured chains
 });
 
@@ -95,10 +95,10 @@ function MyApp({ Component, pageProps }: AppProps) {
           <Head>
             <meta
               name="description"
-              content="Welcome to Gratedane, your go-to source for all things Nft Staking."
+              content="Welcome to Angle Warriors, your go-to source for all things Nft Staking."
             />
-            <link rel="shortcut icon" href="favicon.png" />
-            <title> Great Dane</title>
+            <link rel="shortcut icon" href="https://yellow-instant-gazelle-449.mypinata.cloud/ipfs/QmXUBWu5412Agr4Jc2ZjJAnfj5oDdFdAyTaoUfurNUPuLM?_gl=1*1aarsgj*_ga*MTM5OTUzMjUxOS4xNjcwNzYwMTMw*_ga_5RMPXG14TE*MTY5MTg1NDY1OS4xNi4wLjE2OTE4NTQ2ODEuMzguMC4w" />
+            <title> Angle Warriors Staking Dapp</title>
           </Head>{" "}
           <Navbar />
           <Component {...pageProps} />

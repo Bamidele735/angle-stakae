@@ -186,10 +186,10 @@ const Stake: NextPage = () => {
               <div>
                 <p>No Nfts to Stake</p>
                 <button className="mining_btn">
-                  <Link href="http://Greatdaneai.com" target="_blank">
+                  <a href="https://worrior.vercel.app/" rel="noreferrer" target="_blank">
                     {" "}
                     Start Minting
-                  </Link>
+                  </a>
                 </button>{" "}
               </div>
             )}
