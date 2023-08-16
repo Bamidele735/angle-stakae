@@ -14,17 +14,17 @@ export default function Navbar() {
           <img
             src="https://yellow-instant-gazelle-449.mypinata.cloud/ipfs/QmXUBWu5412Agr4Jc2ZjJAnfj5oDdFdAyTaoUfurNUPuLM?_gl=1*1aarsgj*_ga*MTM5OTUzMjUxOS4xNjcwNzYwMTMw*_ga_5RMPXG14TE*MTY5MTg1NDY1OS4xNi4wLjE2OTE4NTQ2ODEuMzguMC4w"
             className="pt-0"
-            alt="Angle Logo"
+            alt="Angel Logo"
             width={30}
             height={30}
           />
           <span className="nav_logo_name pl-4 self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-          Angle Warriors
+            Angel Warriors
           </span>
         </Link>
         <div className="flex md:order-2">
-        <ConnectWallet className="connet usdc2"/>
-          
+          <ConnectWallet className="connet usdc2" />
+
 
           <button
             data-collapse-toggle="navbar-sticky"
@@ -73,8 +73,8 @@ export default function Navbar() {
                 About
               </Link>
             </li> */}
-   
-           
+
+
           </ul>
         </div>
       </div>
