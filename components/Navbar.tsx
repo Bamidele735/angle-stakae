@@ -5,6 +5,7 @@ import Logo from "../public/media/logo.png";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { Web3Button } from "@thirdweb-dev/react";
 import Link from "next/link";
+import { ConnectWallet } from "@thirdweb-dev/react";
 export default function Navbar() {
   return (
     <nav className="bg-transparent dark:bg-white  w-full z-20 top-0 left-0 border-transparent border-transparent dark:border-gray-600">
@@ -22,7 +23,8 @@ export default function Navbar() {
           </span>
         </Link>
         <div className="flex md:order-2">
-          <ConnectButton />
+        <ConnectWallet className="connet usdc2"/>
+          
 
           <button
             data-collapse-toggle="navbar-sticky"

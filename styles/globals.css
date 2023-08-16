@@ -888,3 +888,18 @@ img {
     margin: 0px 10px;
   }
 }
+.connet{
+      text-align: center !important;
+      font-weight: 550 !important;
+    background: #008cdd !important;
+    border: 2px solid #00436a !important;
+    color: #fff !important;
+    border-radius: 10px !important;
+    font-size: 15px !important;
+    transition: all 0.5s ease-in ;
+  }
+    .connet:hover{
+        background: linear-gradient(0deg, rgb(11, 0, 27),  rgb(47, 5, 106)) !important;
+        color: #fff !important;
+    }
+  

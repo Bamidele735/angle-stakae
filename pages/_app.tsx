@@ -1,7 +1,7 @@
 import type { AppProps } from "next/app";
 import { useEffect } from "react";
 import Head from "next/head";
-
+import { Alveychain } from "@thirdweb-dev/chains";
 import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
 import "../styles/globals.css";
 import "../styles/home.css";
@@ -21,8 +21,7 @@ import Navbar from "../components/Navbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "../components/Footer";
-// This is the chain your dApp will work on.
-const activeChain = ChainId.Mumbai;
+
 
 // Configure the blockchain providers and chains to use
 const { chains, provider } = configureChains(
@@ -79,7 +78,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <WagmiConfig client={wagmiClient}>
-      <ThirdwebProvider activeChain={activeChain}>
+      <ThirdwebProvider 
+            activeChain={ Alveychain }
+            // clientId="316ac75a2ee3b40ab6438468663b00b7"
+      >
         {/* Set up the RainbowKit provider for the app */}
         <RainbowKitProvider
           chains={chains}
